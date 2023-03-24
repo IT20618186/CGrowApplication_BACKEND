@@ -21,6 +21,7 @@ mongoose
   .catch((error) => console.log(error));
 
 app.use("/auth", require("./routes/Login"));
+app.use("/delivery", require("./routes/Delivery"));
 
 const port = process.env.PORT || 8100;
 
